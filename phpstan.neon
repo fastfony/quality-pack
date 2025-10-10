@@ -1,0 +1,11 @@
+parameters:
+    level: max
+    paths:
+        - src
+        - tests
+    excludePaths:
+        - tests/Fixtures/*
+    tmpDir: var/cache/phpstan
+    ignoreErrors:
+        # Add your custom ignores here
+    reportUnmatchedIgnoredErrors: false
