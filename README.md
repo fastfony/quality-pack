@@ -15,26 +15,21 @@ This pack includes the following tools and configurations:
 - **PHPStan** - PHP Static Analysis Tool
 - **PHP CS Fixer** - PHP Coding Standards Fixer
 - **Twig CS Fixer** - Twig Coding Standards Fixer
-- **PHP Insights** - Instant PHP quality checks
 
 ## Configuration Files
 
 The following configuration files are provided as examples:
 
-- `phpstan.neon` - PHPStan configuration
-- `.php-cs-fixer.dist.php` - PHP CS Fixer configuration
-- `.twig-cs-fixer.php` - Twig CS Fixer configuration
-- `phpinsights.php` - PHP Insights configuration
+- `.twig-cs-fixer.php` - Twig CS Fixer configuration, this file is copied by flex/recipe or manually
 
 ## GitHub Actions Workflow
 
 A GitHub Actions workflow example is provided in `.github/workflows/quality.yml` that runs:
 
-- Security checks (using Symfony Security Checker)
+- Security checks (using Composer Security Audit)
 - PHPStan analysis
-- PHP Insights quality checks
 
-The workflow runs on all pushes and pull requests to `main` and `develop` branches.
+The workflow runs on all pushes and pull requests to all branches.
 
 ## Usage
 
@@ -67,13 +62,6 @@ vendor/bin/twig-cs-fixer lint templates/
 Fix Twig templates:
 ```bash
 vendor/bin/twig-cs-fixer lint --fix templates/
-```
-
-### PHP Insights
-
-Run quality checks:
-```bash
-vendor/bin/phpinsights
 ```
 
 ## Customization
