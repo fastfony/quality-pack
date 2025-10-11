@@ -1,0 +1,19 @@
+{
+    "name": "fastfony/quality-pack",
+    "description": "A Symfony pack for initializing quality tools in your project",
+    "type": "symfony-pack",
+    "license": "MIT",
+    "require-dev": {
+        "phpstan/phpstan": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "vincentlanglet/twig-cs-fixer": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "Fastfony",
+            "email": "contact@fastfony.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
