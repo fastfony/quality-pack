@@ -3,6 +3,11 @@
     "description": "A Symfony pack for initializing quality tools in your project",
     "type": "symfony-pack",
     "license": "MIT",
+    "require": {
+        "phpstan/phpstan": "^2.0",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "vincentlanglet/twig-cs-fixer": "^3.0"
+    },
     "require-dev": {
         "phpstan/phpstan": "^2.0",
         "friendsofphp/php-cs-fixer": "^3.0",
