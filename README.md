@@ -8,6 +8,15 @@ A Symfony pack for initializing quality tools in your project.
 composer require fastfony/quality-pack --dev
 ```
 
+**With Symfony Flex:**
+When using Symfony Flex, the recipe will automatically add:
+- `.twig-cs-fixer.dist.php` - Twig CS Fixer configuration file
+- `.github/workflows/quality.yml` - GitHub Actions workflow for quality checks
+- `Makefile` - A "quality" command for running quality tools
+
+**Without Symfony Flex:**
+If you're not using Symfony Flex, you can manually copy the configuration files from this repository to your project.
+
 ## What's included?
 
 This pack includes the following tools and configurations:
@@ -18,9 +27,15 @@ This pack includes the following tools and configurations:
 
 ## Configuration Files
 
-The following configuration files are provided as examples:
+When using Symfony Flex, the recipe provides the following configuration files:
 
-- `.twig-cs-fixer.php` - Twig CS Fixer configuration, this file is copied by flex/recipe or manually
+- `.twig-cs-fixer.dist.php` - Twig CS Fixer configuration (automatically added by recipe)
+- `.github/workflows/quality.yml` - GitHub Actions workflow (automatically added by recipe)
+- `Makefile` - Quality command shortcut (automatically added by recipe)
+
+Configuration files for PHPStan and PHP CS Fixer are provided by their respective Symfony Flex recipes.
+
+If you're not using Symfony Flex, you can manually add these files to your project.
 
 ## GitHub Actions Workflow
 
