@@ -1,0 +1,7 @@
+# Fins de ligne normalisées en LF dans le dépôt et dans les copies de travail,
+# quel que soit le réglage core.autocrlf du poste.
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+# CSV conservés tels quels (le CRLF y est la norme RFC 4180).
+*.csv -text
